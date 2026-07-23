@@ -1,0 +1,7 @@
+opencv-python-headless
+face_recognition
+picamera2
+pyserial
+Pillow
+requests
+numpy
