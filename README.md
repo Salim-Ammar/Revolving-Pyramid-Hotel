@@ -123,6 +123,26 @@ numpy
 | Flame Sensor | 1 | Fire detection |
 | Push Buttons | 2 | Emergency triggers |
 
+### Pin Connections (Arduino Uno)
+
+| Component | Arduino Pin | Notes |
+|-----------|:-----------:|-------|
+| Stepper DIR | D9 | TB6600 direction control |
+| Stepper STEP | D8 | TB6600 step pulse |
+| RFID SS | D5 | MFRC522 SPI slave select |
+| RFID RST | D4 | MFRC522 reset |
+| RFID SCK | D13 | MFRC522 SPI clock (hardware SPI) |
+| RFID MOSI | D11 | MFRC522 SPI data in (hardware SPI) |
+| RFID MISO | D12 | MFRC522 SPI data out (hardware SPI) |
+| Flame Sensor | A2 | Analog input, threshold 300 |
+| Emergency Btn 1 | D6 | Push button (pull-down) |
+| Emergency Btn 2 | D7 | Push button (pull-down) |
+| UART TX | D1 (TX) | To RPi5 RX (9600 baud) |
+| UART RX | D0 (RX) | To RPi5 TX (9600 baud) |
+| Common GND | GND | Shared across all modules |
+
+![Wiring diagram](assets/wiring-diagram.png)
+
 ---
 
 ## Software Stack
